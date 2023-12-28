@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="w-100 p-0 m-0 col-12">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class=" w-100 p-0 m-0 col-12">
+
+    <div class="topnav" id="myTopnav">
+
+        <div class="title">
+            <a href="#home" data-toggle="tooltip" data-placement="bottom" title="HOME" class="rest">Restaurant</a>
+        </div>
+        <div class="search-container">
+            <form action="">
+                <input type="text" class="search-box" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a href="javascript:void(0);" id="icon" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <div class="header">
+            <a href="Home.html"><button class="home" data-toggle="tooltip" data-placement="bottom"
+                    title="HOME">HOME</button></a>
+            <a href="foods.html"><button data-toggle="tooltip" data-placement="bottom" title="FOODS"
+                    class="foods">FOODS</button> </a>
+            <a href="drinks.html"><button data-toggle="tooltip" data-placement="bottom" title="DRINKS"
+                    class="drinks">DRINKS</button> </a>
+            <a href="about.html"><button data-toggle="tooltip" data-placement="bottom" title="ABOUT"
+                    class="about">ABOUT</button> </a>
+            <a href="contact.html"><button data-toggle="tooltip" data-placement="bottom" title="CONTACT" class="contact"
+                    style="color: orange; border-bottom: 5px solid orange;">CONTACT</button> </a>
+        </div>
+        <div class="buttons">
+            <a href="signup.html"><button class="btn btn-outline-warning">Sign Up</button></a>
+            <a href="login.html"><button class="btn btn-outline-warning">Log in</button></a>
+        </div>
+    </div>
+    <div class="margin" style="height: 125px; "></div>
+    <div class="contact " style="text-align: center; ">
+        <marquee scrollamount="40" behavior="slide" direction="down">
+            <div class="contact-heading" align="center">
+                <h5>Contact Us </h5>
+                <p>Please give us a call, or email us and we’ll get back to you.</p>
+            </div>
+        </marquee>
+        <div class="contact-card" style="margin-top: 50px;">
+            <div class="contact-icon">
+                <button><i class="fa fa-phone" aria-hidden="true"></i> </button>
+                <h5>PHONE</h5>
+                <p>613-518-7434</p>
+            </div>
+            <div class="contact-icon">
+                <button><i class="fa fa-map-marker" aria-hidden="true"></i></button>
+                <h5>OUR LOCATION</h5>
+                <p>577 Gladstone Ave Ottawa, ON K1R5P2</p>
+            </div>
+            <div class="contact-icon">
+                <button><i class="fa fa-clock-o" aria-hidden="true"></i> </button>
+                <h5>Opening Hours</h5>
+                <p>Sat-Sun: 9:00 AM to 10:00 PM</p>
+            </div>
+            <div class="contact-icon">
+                <button> <i class="fa fa-envelope" aria-hidden="true"></i></button>
+                <h5>Email Us</h5>
+                <p>info@ottawakabab.com</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="contact-h1-2"
+        style="text-align: center; padding: 65px 0px 15px 0px; color: orange; text-shadow: 1px 1px 1px #573800, 1px 1px 1px #573800, 1px 1px 1px #573800, 1px 1px 1px #573800;">
+        <h1 id="contact_h1_2">We Welcome you, VISIT US ANYTIME </h1>
+    </div>
+    <div class="contact-form" style="display: flex; justify-content: center;">
+        <div class="sub-contact-form" style="background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0px 0px 7px 3px #8a8a8a; 
+            width: 35%; margin: 40px 0; ">
+            <form action="" style="display: flex; flex-direction: column;">
+                <label style="margin-bottom: 10px;" for="Name">Name:</label>
+                <input class="form-control " style="padding: 5px 10px;   border-radius: 5px;" type="text"
+                    placeholder="Name" id="Name"><br>
+                <label style="margin-bottom: 10px;" for="Phone">Phone:</label>
+                <input class="form-control " style="padding: 5px 10px;   border-radius: 5px;" type="text"
+                    placeholder="Phone" id="Phone"><br>
+                <label style="margin-bottom: 10px;" for="Email">Email:</label>
+                <input class="form-control " style="padding: 5px 10px; margin-bottom: 30px;  border-radius: 5px;"
+                    type="text" placeholder="Email" id="Email">
+                <select class="form-control " style="padding: 5px 10px; margin-bottom: 30px;  border-radius: 5px;"
+                    id="">
+                    <option value="">Select</option>
+                    <option value="">Service 1</option>
+                    <option value="">Service 2</option>
+                    <option value="">Service 3</option>
+                    <option value="">Service 4</option>
+                    <option value="">Service 5</option>
+                </select>
+                <label style="margin-bottom: 10px;" for="Message">Message:</label>
+                <textarea class="form-control " style="margin-bottom: 10px;" name="" id="" cols="30" rows="10"
+                    placeholder="Message"> </textarea>
+                <button type="button" onclick="contact_msg()" class="btn btn-primary ">Send Message</button>
+                <div class="submit-message" style="text-align: center; margin: 17px 0 0 0;">
+                    <p id="submit-msg"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer style="background-color: #1c1302; color: #c5a66dbd; height: 70vh; margin-top: 70px;">
+        <div style="padding: 30px;" class="footer-contact">
+            <h4 style="font-weight: bold;">CONTACT US</h4>
+            <div class="call-us">
+                <div class="call-logo"><i style="font-size: 20px;" class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="call">
+                    <p style="font-weight: 600;">Call us</p>
+                    <p style="font-weight: bold;">613-518-7434 </p>
+                </div>
+            </div>
+            <div class="email-us">
+                <div class="email-logo"><i style="font-size: 20px;" class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="email">
+                    <p style="font-weight: 600;">Email Us</p>
+                    <p style="font-weight: bold;">info@ottawakabab.com </p>
+                </div>
+            </div>
+            <div class="our-location">
+                <div class="location-logo"><i style="font-size: 20px;" class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="location">
+                    <p style="font-weight: 600;">Our Location</p>
+                    <p style="font-weight: bold;">577 Gladstone Ave Ottawa, ON K1R5P2</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-pages">
+            <div style="font-family: 'Brush Script MT';" class="footer-heading">
+                <h5 style="font-size: 50px; padding-top: 30px; text-align: center;"><a href="Home.html"
+                        style="text-decoration: none; color: orange;">Restaurant</a></h5>
+            </div>
+            <div class="footer-sub-heading" style="    padding: 10px 65px; font-size: 23px; text-align: justify; ">
+                Whisper to us about your feelings, and we will prepare what you need now.
+            </div>
+            <div class="social-pages"
+                style="padding: 45px 0; justify-content: center; width: 100%; display: inline-flex;">
+                <div class="box "><a href="https://www.facebook.com/" target="_blank"><i
+                            class="facebook fa fa-facebook"></i></a></div>
+                <div class="box "><a href="https://www.instagram.com/" target="_blank"><i
+                            class="instagram fa fa-instagram" aria-hidden="true"></i></a></div>
+                <div class="box "><a href="https://www.twitter.com/" target="_blank"><i class="twitter fa fa-twitter"
+                            aria-hidden="true"></i></a></div>
+            </div>
+            <div style="text-align: center; margin-top: 35px; color: #ffcc6a69;" class="copyright">
+                <p>&copy; Copyright at the Restaurant Website</p>
+            </div>
+        </div>
+        <div class="footer-nav" style=" padding: 30px; padding-left: 100px;">
+            <h4 style="margin-bottom: 35px;">Quick Links</h4>
+            <div class="sub-nav" style="display: flex; flex-direction: column; height: 235px;">
+                <a style="text-decoration: none; " href="Home.html"><button>HOME</button></a>
+                <a style="text-decoration: none; " href="foods.html"><button>FOODS</button></a>
+                <a style="text-decoration: none; " href="drinks.html"><button>DRINKS</button></a>
+                <a style="text-decoration: none; " href="about.html"><button>ABOUT</button></a>
+                <a style="text-decoration: none; " href="contact.html"><button>CONTACT</button></a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>
